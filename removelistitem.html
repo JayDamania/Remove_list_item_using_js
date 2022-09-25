@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Remove list item using js</title>
+  </head>
+  <style>
+    button {
+      margin: 15px;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <p>Card Type</p>
+    <select class="inputbox" name="card_type" id="card_type" required>
+      <option value="">--Select a Color--</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="Purple">Purple</option>
+      <option value="Green">Green</option>
+    </select>
+    <br />
+    <button onclick="myFunction()">Remove Selected Item</button>
+    <button onclick="window.location.reload();return false;">Reset</button>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("card_type");
+        x.remove(x.selectedIndex);
+      }
+    </script>
+  </body>
+</html>
